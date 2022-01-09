@@ -1,12 +1,12 @@
 import random
 
 DESCRIPTION = 'What is the result of the expression?'
-OPERATIONS = ['+', '-', '*']
+ALLOWED_OPERATIONS = ['+', '-', '*']
 
 
 def gen_question_and_result():
 
-    operation = random.choice(OPERATIONS)
+    operation = random.choice(ALLOWED_OPERATIONS)
     if operation == '+':
         number1 = random.randint(1, 40)
         number2 = random.randint(1, 40)
