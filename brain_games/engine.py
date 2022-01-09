@@ -3,7 +3,7 @@ import prompt
 
 from brain_games.cly import user_name
 
-GAME_SCORE = 3
+GAME_ROUNDS_COUNT = 3
 
 
 def game_process(game: object) -> object:
