@@ -18,6 +18,6 @@ def game_process(game: object) -> object:
         else:
             print('"{}" is wrong answer. Correct answer was "{}"'.format(answer, result))
             print("Let's try again, {}!".format(name))
-            break
-    else:
-        print('Congratulations, {}!'.format(name))
+            return
+    
+    print('Congratulations, {}!'.format(name))
