@@ -11,7 +11,7 @@ def game_process(game: object):
     print(game.DESCRIPTION)
     for _ in range(GAME_SCORE):
         question, result = game.gen_question_and_result()
-        print('Question: {}'.format(question))
+        print(question)
         answer = prompt.string('Your answer: ')
         if answer == result:
             print('Correct')
