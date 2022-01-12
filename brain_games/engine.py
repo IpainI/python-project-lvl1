@@ -3,7 +3,7 @@ import prompt
 
 from brain_games.cli import ask_user_name
 
-GAME_ROUNDS_COUNT = 10
+GAME_ROUNDS_COUNT = 3
 
 
 def game_process(game: object):
