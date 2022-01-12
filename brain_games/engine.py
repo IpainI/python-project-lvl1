@@ -6,7 +6,7 @@ from brain_games.cli import ask_user_name
 GAME_ROUNDS_COUNT = 3
 
 
-def game_process(game: object):
+def game_process(game):
     name = ask_user_name()
     print(game.DESCRIPTION)
     for _ in range(GAME_ROUNDS_COUNT):
