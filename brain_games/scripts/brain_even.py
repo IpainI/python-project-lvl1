@@ -4,7 +4,7 @@ from brain_games.games import even
 from brain_games.engine import game_process
 
 
-def main() -> object:
+def main():
     print('Welcome to the Brain Games!')
     game_process(even)
 
