@@ -16,7 +16,8 @@ def start_game_process(game):
         if answer == result:
             print('Correct')
         else:
-            print('"{}" is wrong answer. Correct answer was "{}".'.format(answer, result))
+            print('"{}" is wrong answer. Correct answer \
+                  was "{}".'.format(answer, result))
             print("Let's try again, {}!".format(name))
             return
     print('Congratulations, {}!'.format(name))
