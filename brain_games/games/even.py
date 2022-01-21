@@ -7,5 +7,5 @@ def get_question_and_result():
 
     number = random.randint(1, 100)
     result = ['yes' if number % 2 == 0 else 'no']
-    expression = 'Question: {}'.format(number)
+    expression = '{}'.format(number)
     return expression, *result
