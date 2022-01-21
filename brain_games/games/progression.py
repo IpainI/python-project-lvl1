@@ -9,12 +9,12 @@ def get_progression():
     first = random.randint(1, 15)
     progression = [first + step * i for i in range(length)]
     hidden_index = random.randint(0, length - 1)
-    hidden_item = ".."
-    progression[hidden_index], hidden_item = hidden_item, progression[hidden_index]
-    return progression, str(hidden_item)
+    result = ".."
+    progression[hidden_index], result = result, progression[hidden_index]
+    return ' '.join(map(str, progression)), str(result)
 
 
 def get_question_and_result():
     progression, result = get_progression()
-    expression = 'Question: {} '.format(progression)
+    expression = '{}'.format(progression)
     return expression, result
