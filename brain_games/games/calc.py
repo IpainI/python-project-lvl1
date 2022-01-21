@@ -15,5 +15,5 @@ def get_question_and_result():
         result = str(number1 - number2)
     elif operation == '*':
         result = str(number1 * number2)
-    expression = 'Question: {} {} {}'.format(number1, operation, number2)
+    expression = '{} {} {}'.format(number1, operation, number2)
     return expression, result
