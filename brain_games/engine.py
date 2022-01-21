@@ -11,7 +11,7 @@ def game_process(game):
     print(game.DESCRIPTION)
     for _ in range(GAME_ROUNDS_COUNT):
         question, result = game.get_question_and_result()
-        print('Question:',question)
+        print(question)
         answer = prompt.string('Your answer: ')
         if answer == result:
             print('Correct')
